@@ -1,13 +1,13 @@
-import Footer from "./components/footer";
-import Header from "./components/header";
+import Options from "./catalogue/categoryoptions";
+import Advertisements from "./components/advertisement/advertisement";
+import Blogs from "./components/blogs/blog";
+import Footer from "./components/footer/footer";
+import Header from "./components/navbar/header";
+import Slider from "./components/slider";
+import Testimonials from "./components/testimonails";
 import "./globals.css";
-import Advertisements from "./pages/advertisement";
-import Blogs from "./pages/blog";
-import Options from "./pages/categoryoptions";
-import Newsletter from "./pages/newsletter";
-import ProductList from "./pages/productlist";
-import Slider from "./pages/slider";
-import Testimonials from "./pages/testimonails";
+import Newsletter from "./newsletter/newsletter";
+import ProductList from "./product/productlist";
 
 export default function Home() {
   return (

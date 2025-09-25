@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Button from "../components/button";
+import Button from "./button";
 
 const slides = [
   {

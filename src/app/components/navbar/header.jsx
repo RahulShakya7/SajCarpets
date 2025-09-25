@@ -2,6 +2,7 @@
 
 import { ListIcon, MagnifyingGlassIcon, UserIcon, XIcon } from "@phosphor-icons/react";
 import { useState } from "react";
+import ThemeToggle from "../themetoggle";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,6 +36,8 @@ const Header = () => {
           <MagnifyingGlassIcon size={32} className="text-black gap-2 cursor-pointer" />
           <div className="flex gap-4"></div>
           <UserIcon size={32} className="text-primary gap-2 cursor-pointer" />
+          <div className="flex gap-4"></div>
+          <ThemeToggle size={32} className="text-black gap-2 cursor-pointer" />
         </div>
 
         {/* Hamburger Menu Button */}

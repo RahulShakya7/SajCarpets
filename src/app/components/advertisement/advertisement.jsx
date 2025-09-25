@@ -1,13 +1,10 @@
 "use client";
 
 import { ArrowUUpLeft, Money, Package } from "@phosphor-icons/react";
-import AdvertisementCards from "../components/adcardbottom";
-import TopAdvertisement from "../components/adcardtop";
+import AdvertisementCards from "./adcardbottom";
+import TopAdvertisement from "./adcardtop";
 
 // --- Data ---
-
-
-
 const advertisementsData = [
   {
     title: "Cash on Delivery",
@@ -44,11 +41,12 @@ const topSectionData = [
 
 const Advertisements = () => {
   return (
-    <section className="flex flex-col w-full gap-12 px-6 sm:px-12 md:px-16 lg:px-24 xl:px-[300px] py-12 bg-white">
+    <section className="flex flex-col w-full gap-12 px-6 sm:px-12 md:px-16 lg:px-24 xl:px-[300px] py-[72px] bg-white">
       <TopAdvertisement slides={topSectionData} />
       <AdvertisementCards data={advertisementsData} />
     </section>
   );
 };
+
 
 export default Advertisements;

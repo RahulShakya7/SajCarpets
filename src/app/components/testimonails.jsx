@@ -1,8 +1,7 @@
 "use client";
 
-import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import TestimonialCard from "../components/TestimonialCard";
+import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
   {
@@ -57,20 +56,18 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonial Card */}
-      <div className="w-full max-w-6xl relative overflow-hidden h-[500px] md:h-[400px]">
-        <AnimatePresence mode="wait">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={testimonial.id}
-              testimonial={testimonial}
-              current={current}
-              index={index}
-            />
-          ))}
-        </AnimatePresence>
+      <div className="relative w-full flex justify-center items-center">
+        {testimonials.map((t, i) => (
+          <TestimonialCard
+            key={t.id}
+            testimonial={t}
+            current={current}
+            index={i}
+          />
+        ))}
       </div>
-
-      {/* ✅ Dots BELOW the card */}
+      
+      {/* Dots BELOW the card */}
       <div className="flex items-center gap-2 mt-4">
         {testimonials.map((_, dotIndex) => (
           <div
