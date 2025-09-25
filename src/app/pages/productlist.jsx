@@ -5,13 +5,13 @@ import { useState } from "react";
 import ProductCard from "../components/productcard";
 
 const products = [
-  { id: 1, name: "Luxury Carpet", description: "Soft and elegant design.", price: 120, image: "/images/carpet1.jpg", category: "carpets" },
-  { id: 2, name: "Classic Carpet", description: "Durable and stylish carpet.", price: 350, image: "/images/carpet2.jpg", category: "carpets" },
-  { id: 3, name: "Modern Carpet", description: "Perfect for contemporary homes.", price: 150, image: "/images/carpet3.jpg", category: "rugs" },
-  { id: 4, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, image: "/images/carpet4.jpg", category: "carpets" },
-  { id: 5, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, image: "/images/carpet4.jpg", category: "carpets" },
-  { id: 6, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, image: "/images/carpet4.jpg", category: "carpets" },
-  { id: 7, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, image: "/images/carpet4.jpg", category: "carpets" },
+  { id: 1, name: "Luxury Carpet", description: "Soft and elegant design.", price: 120, originalPrice: 150, image: "/images/carpet1.jpg", category: "carpets" },
+  { id: 2, name: "Classic Carpet", description: "Durable and stylish carpet.", price: 350, originalPrice: 400, image: "/images/carpet2.jpg", category: "carpets" },
+  { id: 3, name: "Modern Carpet", description: "Perfect for contemporary homes.", price: 150, originalPrice: 200, image: "/images/carpet3.jpg", category: "rugs" },
+  { id: 4, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, originalPrice: 250, image: "/images/carpet4.jpg", category: "carpets" },
+  { id: 5, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, originalPrice: 250, image: "/images/carpet4.jpg", category: "carpets" },
+  { id: 6, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, originalPrice: 250, image: "/images/carpet4.jpg", category: "carpets" },
+  { id: 7, name: "Persian Carpet", description: "Handmade traditional style.", price: 220, originalPrice: 250, image: "/images/carpet4.jpg", category: "carpets" },
 ];
 
 const tabs = ["all", "beds", "carpets", "rugs"];

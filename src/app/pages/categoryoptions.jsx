@@ -20,7 +20,7 @@ const categories = [
 
 const Options = () => {
   return (
-    <div className="w-full py-12 px-4 sm:px-8 md:px-16 lg:px-[300px] bg-white">
+    <div className="w-full py-12 px-4 sm:px-8 md:px-16 lg:px-[300px] md:py-[72px] bg-white">
       <h1 className="text-4xl md:text-5xl font-bold text-black mb-8 text-center">
         Shop by Category
       </h1>

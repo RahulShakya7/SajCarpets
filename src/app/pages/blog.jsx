@@ -28,7 +28,7 @@ const blogs = [
 
 export default function Blogs() {
   return (
-    <div className="bg-white px-4 sm:px-8 md:px-16 lg:px-[300px] py-12 md:py-[72px]">
+    <div className="bg-blue-50 px-4 sm:px-8 md:px-16 lg:px-[300px] py-12 md:py-[72px]">
       {/* Heading */}
       <div className="flex flex-col items-center gap-4 mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-black">Blogs</h2>

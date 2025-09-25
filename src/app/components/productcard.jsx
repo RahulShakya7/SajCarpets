@@ -15,7 +15,15 @@ const ProductCard = ({ product }) => {
       />
       <h3 className="mt-4 text-black text-lg font-semibold">{product.name}</h3>
       <p className="text-gray-600 text-sm md:text-base">{product.description}</p>
-      <p className="mt-2 text-3xl font-bold text-primary ">£{product.price}</p>
+
+      {/* Price section */}
+      <div className="mt-2 flex items-baseline gap-3">
+        <p className="text-3xl font-bold text-primary">£{product.price}</p>
+        {product.originalPrice && (
+          <p className="text-lg text-gray-500 line-through">£{product.originalPrice}</p>
+        )}
+      </div>
+
       <button className="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-gray-800">
         Enquire Now
       </button>

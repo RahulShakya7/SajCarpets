@@ -6,7 +6,7 @@ import { useState } from "react";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navLinks = ["ABOUT US", "CONTACT US", "SHOP", "CATALOGUE"];
+  const navLinks = ["ABOUT US", "CONTACT US", "BLOG", "SHOP", "CATALOGUE"];
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
@@ -23,7 +23,7 @@ const Header = () => {
           {navLinks.map((link) => (
             <div
               key={link}
-              className="text-black text-lg sm:text-xl font-normal cursor-pointer hover:text-primary transition"
+              className="text-gray-400 text-lg sm:text-xl font-normal cursor-pointer hover:text-primary transition"
             >
               {link}
             </div>
