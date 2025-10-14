@@ -31,8 +31,8 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
-import { X, MagnifyingGlass } from "@phosphor-icons/react";
+import { MagnifyingGlass, X } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
 
 export default function SearchPopup({ isOpen, onClose }) {
   const [query, setQuery] = useState("");

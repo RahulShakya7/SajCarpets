@@ -18,16 +18,18 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-      className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 transition-colors"
+      className="p-2 rounded-lg bg-white dark:bg-gray-700 transition-colors"
       aria-label="Toggle Dark Mode"
     >
       {currentTheme === "dark" ? (
-        <SunIcon size={24} weight="bold" className="text-yellow-400" />
+        <SunIcon size={32} className="text-yellow-400 cursor-pointer hover:text-primary transition-colors duration-200" />
       ) : (
-        <MoonIcon size={24} weight="bold" className="text-gray-900" />
+        <MoonIcon size={32} className="text-gray-900 cursor-pointer hover:text-primary transition-colors duration-200" />
       )}
     </button>
   );
 }
+
+
 
 export default ThemeToggle;

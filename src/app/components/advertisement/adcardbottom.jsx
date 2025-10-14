@@ -22,7 +22,7 @@ const AdvertisementCards = ({ data }) => {
         );
       })}
     </div>
-  );
+  );  
 };
 
 export default AdvertisementCards;

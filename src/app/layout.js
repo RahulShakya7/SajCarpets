@@ -1,7 +1,9 @@
-// src/app/layout.jsx
-import { ThemeProvider } from "next-themes"; // for dark/light mode
+import { ThemeProvider } from "next-themes";
 import { Open_Sans } from "next/font/google";
-import { AuthProvider } from "../providers/authprovider"; // custom auth provider (e.g. NextAuth)
+import Footer from "../app/components/footer/footer";
+import Header from "../app/components/navbar/header";
+import Newsletter from "../app/newsletter/newsletter";
+import { AuthProvider } from "../providers/authprovider";
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -10,7 +12,6 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
-// ✅ Global metadata (SEO, OpenGraph, etc.)
 export const metadata = {
   title: "My App",
   description: "An awesome Next.js app with theme and auth providers",
@@ -19,11 +20,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${openSans.variable} antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100`}>
-        {/* Theme + Auth Providers wrap the app */}
+      {/* CHANGE 1: Added flex, flex-col, and min-h-screen to the body */}
+      <body
+        className={`${openSans.variable} antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 flex flex-col min-h-screen`}
+      >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <AuthProvider>
-            {children}
+            <Header />
+
+            {/* CHANGE 2: Added flex-grow to make the main content fill the available space */}
+            <main className="flex-grow">{children}</main>
+
+            <Newsletter />
+            <Footer />
           </AuthProvider>
         </ThemeProvider>
       </body>

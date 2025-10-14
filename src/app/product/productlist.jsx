@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import ProductCard from "../components/shop/productcard";
+import ProductCard from "./productcard";
 
 const products = [
   { id: 1, name: "Luxury Carpet", description: "Soft and elegant design.", price: 120, originalPrice: 150, image: "/images/carpet1.jpg", category: "carpets" },
