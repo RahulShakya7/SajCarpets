@@ -44,7 +44,7 @@ export default async function ProductPage({ params }) {
         id: p.id,
         title: p.name,
         image: productImages.find((im) => im.product_id === p.id)?.image || `/images/carpet${(i % 4) + 1}.jpg`,
-        price: `£${(p.discount_price ?? p.price).toFixed(2)}`,
+        price: `${(p.discount_price ?? p.price).toFixed(2)}`,
         originalPrice: p.discount_price ? `£${p.price.toFixed(2)}` : null,
       })),
   };
