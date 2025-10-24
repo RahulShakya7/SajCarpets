@@ -1,4 +1,4 @@
-import Options from "./catalogue/categoryoptions";
+import Options from "./components/categoryoptions";
 import Advertisements from "./components/advertisement/advertisement";
 import Blogs from "./components/blog/blog";
 import Slider from "./components/slider";

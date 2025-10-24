@@ -1,6 +1,7 @@
 "use client";
 
 import BlogCard from "../components/blog/blogcard";
+import Helmet from "../components/helmet/helmet";
 
 const blogs = [
   {
@@ -49,18 +50,21 @@ const blogs = [
 
 export default function Page() {
   return (
-    <div className="bg-blue-50 px-4 sm:px-8 md:px-16 lg:px-[300px] py-12 md:py-[72px]">
-      {/* Heading */}
-      <div className="flex flex-col items-center gap-4 mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-black">Blogs</h2>
-        <p className="text-lg text-gray-700">Get the latest insights and trends</p>
-      </div>
+    <div className="w-full flex flex-col bg-gray-50">
+      <Helmet title="Blog" breadcrumb="Home / Blogs" />
+      <div className="bg-blue-50 px-4 sm:px-8 md:px-16 lg:px-[300px] py-12 md:py-[72px]">
+        {/* Heading */}
+        <div className="flex flex-col items-center gap-4 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">Blogs</h2>
+          <p className="text-lg text-gray-700">Get the latest insights and trends</p>
+        </div>
 
-      {/* Blog Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-        {blogs.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
-        ))}
+        {/* Blog Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+          {blogs.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))}
+        </div>
       </div>
     </div>
   );
