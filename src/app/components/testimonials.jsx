@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "./testimonialcard";
 
 const testimonials = [
   {

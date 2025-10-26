@@ -2,9 +2,9 @@
 import AdvertisementCards from "../components/advertisement/adcardbottom";
 import Advertisements from "../components/advertisement/advertisement";
 import Helmet from "../components/helmet/helmet";
-import IntroSection from "../components/IntroSection";
-import TeamMemberCard from "../components/TeamMemberCard";
-import Testimonials from "../components/testimonails";
+import IntroSection from "../components/introsection";
+import TeamMemberCard from "../components/teammembercard";
+import Testimonials from "./testimonials";
 
 import { PiggyBankIcon, SealCheckIcon, SmileyIcon } from "@phosphor-icons/react";
 

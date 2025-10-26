@@ -75,7 +75,7 @@ export default async function CataloguePage() {
 
     <div className="min-h-screen bg-white">
         <Helmet title="Product Catalogue" breadcrumb="Home / Catalogue" />
-        <div className="px-6 py-12 sm:px-12 md:px-16 lg:px-24 xl:px-32 2xl:px-[300px]">
+        <div className="px-6 py-16 sm:px-12 md:px-16 lg:px-24 xl:px-32 2xl:px-[300px]">
             <header className="mb-8 sm:mb-10">
             <div className="flex flex-wrap items-end gap-3">
                 <h1 className="font-open-sans font-bold text-4xl sm:text-5xl lg:text-[49px] leading-[120%] text-[#b23017]">

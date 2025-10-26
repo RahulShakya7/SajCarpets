@@ -1,8 +1,8 @@
-import Options from "./components/categoryoptions";
 import Advertisements from "./components/advertisement/advertisement";
 import Blogs from "./components/blog/blog";
+import Options from "./components/categoryoptions";
 import Slider from "./components/slider";
-import Testimonials from "./components/testimonails";
+import Testimonials from "./components/testimonials";
 import "./globals.css";
 import ProductList from "./product/productlist";
 

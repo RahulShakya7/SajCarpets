@@ -55,6 +55,7 @@ export default function CataloguePageClient({ initialItems = [] }) {
     <div className="flex flex-col gap-8">
       {/* Controls */}
       <div className="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+        
         {/* Search */}
         <div className="flex-1">
           <label className="sr-only" htmlFor="catalogue-search">Search</label>
